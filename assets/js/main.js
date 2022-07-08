@@ -1,5 +1,6 @@
 const output = document.querySelector('#copy');
-const block = document.querySelector('.block')
+const block = document.querySelector('.block');
+const response = document.querySelector('#response');
 
 document.querySelectorAll('input').forEach((input) => {
   input.addEventListener('input', () => {
@@ -16,4 +17,8 @@ document.querySelectorAll('input').forEach((input) => {
 
 document.querySelector('#clipboard').addEventListener('click', () => {
   navigator.clipboard.writeText(`border-radius: ${block.style.borderRadius};`);
+  response.removeAttribute('hidden');
+  setTimeout(() => {
+    response.setAttribute('hidden', 'true');
+  }, 3000);
 });
