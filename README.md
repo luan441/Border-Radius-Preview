@@ -2,6 +2,8 @@
 
 A propriedade border-radius pode ter vários valores alterados. Visualize a aparência da forma ao alterar esses valores.
 
+[preview page](https://border-radius-preview-luan441.netlify.app/)
+
 ## User Stories
 
 -   [x] O usuário pode ver uma caixa que tem uma `border-radius` propriedade aplicada a ela
